@@ -7,6 +7,9 @@ class CalculatorTest(unittest.TestCase):
     def test_calculate(self):
         expressions = {
             '(5 + 8) * 3/8 +3': 7.875,
+            '3+2*2': 7,
+            ' 3/2 ': 1.5,
+            '': 0
         }
         for expression, answer in expressions.items():
             calculator = Calculator(expression)
